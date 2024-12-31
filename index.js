@@ -25,7 +25,7 @@ app.post("/", async (req, res) => {
         res.render("index.ejs", {data: result});
     } catch (error) {
         console.error("Failed to make request:", error.message);
-        res.render("solution.ejs", {
+        res.render("index.ejs", {
           error: error.message,
         });
     }
